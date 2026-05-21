@@ -1,0 +1,24 @@
+name: kunming-ai
+
+channels:
+  - pytorch
+  - conda-forge
+
+dependencies:
+  - python=3.11
+
+  # Core scientific stack
+  - numpy
+  - matplotlib
+  - scikit-learn
+
+  # PyTorch
+  # For NVIDIA GPU support, add `pytorch-cuda=12.1` and the `nvidia` channel.
+  # On CPU-only machines (incl. Apple Silicon), the lines below are sufficient.
+  - pytorch
+  - torchvision
+
+  # Experiment tracking (installed via pip — newer releases land there first)
+  - pip
+  - pip:
+      - wandb
