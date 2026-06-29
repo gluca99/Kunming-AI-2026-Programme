@@ -32,10 +32,10 @@ Each session has its own folder containing the code and slides used on the day.
 ├── 04-practical-2-dataset-dataloader/
 ├── 05-workshop-3-diagnosing-training-wandb/
 ├── 06-practical-3-init-regularization/
-├── 07-lecture-7-ai-for-science-pinns/
-├── 08-lecture-8-neural-operators/
-├── 09-workshop-4-cnns-unet/
-├── 10-practical-4-sklearn-pca-forests/
+├── 07-workshop-4-cnns-unet/
+├── 08-practical-4-dim-reduction-cv-confusion/
+├── 09-lecture-7-ai-for-science-pinns/
+├── 10-lecture-8-next-gen-models/
 ├── 11-workshop-5-end-to-end/
 ├── 12-practical-5-qa-demo-next-steps/
 ├── environment.yml
@@ -58,17 +58,17 @@ NN-session-name/
 | #  | Date        | Session              | Topic & what you'll learn |
 |----|-------------|----------------------|----------------------------|
 | 1  | Fri 22 May  | Workshop 1           | **Foundations: Conda + Tensors.** Why isolated environments matter. Creating a conda env and installing packages. PyTorch tensors as the building blocks of ML: creation, indexing, broadcasting, devices (CPU vs GPU), dtypes. |
-| 2  | Wed 27 May  | Practical Workshop 1 | **Autograd from scratch. Linear regression.** Build a neural network using only tensors — no `nn.Module`, no `optim`. |
-| 3  | Mon 1 Jun  | Workshop 2           | **`nn.Module`, activations, and `optim`.** Rebuild last session's network using PyTorch's abstractions. Activation functions (ReLU, GeLU, Tanh, …) and optimizers (SGD, momentum, Adam). |
-| 4  | Mon 8 Jun   | Practical Workshop 2 | **Dataset, DataLoader, and the full training loop.** Why batching matters; writing a custom `Dataset`; shuffling, workers, GPU pipelines. |
-| 5  | Mon 15 Jun   | Workshop 3           | **Diagnosing training: loss curves, bias–variance, and Wandb.** Diagnose training pathologies through loss curves. The bias–variance trade-off. Logging runs with Weights & Biases. |
-| 6  | Wed 17 Jun  | Practical Workshop 3 | **Initialization and regularization.** Why bad initializations kill deep networks: LeCun, Kaiming, Xavier. Normalization, weight decay, dropout, and early stopping as forms of regularization. |
-| 7  | Fri 19 Jun  | Academic Lecture 7   | **AI for Science I: The landscape and PINNs.** Traditional scientific computing vs ML for science. Physics-Informed Neural Networks (PINNs). |
-| 8  | Fri 26 Jun  | Academic Lecture 8   | **AI for Science II: Neural Operators and the frontier.** Making PINNs more expressive; DeepONet, Fourier Neural Operators. A tour of the wider frontier: AlphaFold, GNNs for molecules, etc. |
-| 9  | Mon 29 Jun  | Workshop 4           | **CNNs and UNet.** Convolution as a translation-equivariant operation; pooling and receptive fields. Build a small CNN and compare it to a classic neural network, then introduce the UNet. |
-| 10 | Wed 1 Jul  | Practical Workshop 4 | **Classical ML with sklearn.** PCA for dimensionality reduction, random forests for feature importance, pipelines, and classical models. |
-| 11 | Thu 2 Jul  | Workshop 5           | **End-to-end experiment.** A complete project tying everything together: conda env, dataloader, model, Wandb sweeps, sklearn post-hoc analysis. |
-| 12 | Thu 2 Jul  | Practical Workshop 5 | **Open Q&A, AI-for-Science demo, and where to go next.** Q&A. One polished demo. Resources for continuing: Papers with Code, HuggingFace, Kaggle, NeurIPS, ICML, ICLR. |
+| 2  | Wed 27 May  | Practical Workshop 1 | **Autograd from scratch.** Linear regression. Build a neural network using only tensors; no `nn.Module`, no `optim`. |
+| 3  | Thu 4 Jun   | Workshop 2           | **`nn.Module`, activations, and `optim`.** Rebuild last session's network using PyTorch's abstractions. An introduction to the various activation functions (ReLU, GeLU, Tanh, …) and optimisers (SGD, momentum, Adam). |
+| 4  | Mon 8 Jun   | Practical Workshop 2 | **Dataset, DataLoader, and the full training loop.** Why batching matters. Writing a custom `Dataset`. |
+| 5  | Mon 15 Jun  | Workshop 3           | **Diagnosing training: loss curves, bias–variance, and `Wandb`.** Diagnose pathologies in training through loss curves. The bias–variance trade-off. Logging runs with Weights & Biases. |
+| 6  | Wed 17 Jun  | Practical Workshop 3 | **Initialization and regularization.** Why bad parameter initializations kills deep networks. Will look into LeCun, Kaiming and Xavier. Normalization, weight decay, dropout, and early stopping as forms of regularization. |
+| 7  | Thu 25 Jun  | Workshop 4           | **CNNs and UNet.** Convolution as a translation-equivariant operation. We will build a small CNN and compare it to a classic neural network. Then, we will introduce the UNet. |
+| 8  | Fri 26 Jun  | Practical Workshop 4 | Correlation analysis, PCA for dimensionality reduction, feature importance, k-fold cross-validation, better metrics than accuracy. |
+| 9  | Mon 29 Jun  | Academic Lecture 1   | **AI for Science I: Moving away from classical scientific computing.** Traditional scientific computing vs ML for science. Physics-Informed Neural Networks (PINNs). |
+| 10 | Wed 1 Jul   | Academic Lecture 2   | **AI for Science II: Creating generalisable tools for science.** Moving from PINNs to neural operators. Generative models. Foundation models. |
+| 11 | Thu 3 Jul   | Workshop 5           | **End-to-end experiment.** A complete project tying everything together: conda env, dataloader, model, `Wandb` sweeps, `sklearn` post-hoc analysis. |
+| 12 | Thu 3 Jul   | Practical Workshop 5 | **Open Q&A, AI-for-Science demo, and where to go next.** Q&A. One polished demo. Resources for continuing: Papers with Code, HuggingFace, Kaggle, NeurIPS, ICML, ICLR. |
 
 ---
 
